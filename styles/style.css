@@ -14,7 +14,7 @@ main {
     align-items: center;
 }
 
-.top_section {
+.container {
     background: #FFF;
     border-radius: 5px;
     width: 870px;
@@ -24,7 +24,7 @@ main {
 /*------------------------------------------------
     Top Players style 
 -------------------------------------------------*/
-.top_section h3 {
+.section_title {
     color: #562EFF;
     font-size: 24px;
     font-weight: 500;
@@ -88,3 +88,52 @@ article{
     color: #562EFF;
     text-decoration: none;
 }
+
+/*------------------------------------------------
+        Latest Courses Section Style 
+-------------------------------------------------*/
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 10px;
+}
+.course_img_container{
+    width: 266px;
+}
+.course_img_container img{
+    width: 100%;
+}
+.course_title{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+}
+.course_instructor{
+    color: #ED6B4F;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+.filled_star{
+    color: #FFC014;
+}
+.empty_star{
+    color: #AEAEAE;
+}
+.rating_and_duration{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.duration{
+    background-color: #FFE4E8;
+    padding: 2px 10px;
+    border-radius: 30px;
+}
+.rating_point{
+    color: #A2A2A2;
+    font-weight: 400;
+}
+
