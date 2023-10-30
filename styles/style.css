@@ -1,8 +1,96 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lobster&family=Poppins&display=swap');
 
-/* Common Styles */
+/*-----------------------------------------------
+    Header Styles 
+-------------------------------------------------*/
+
+header {
+    display: flex;
+    justify-content: center;
+    background: #562EFF;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 35px;
+}
+
+header div {
+    width: 930px;
+    height: 100%;
+
+}
+
+.header_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_and_header_title {
+    display: flex;
+    align-items: center;
+}
+
+.navigation_components {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 40px;
+    line-height: 90px;
+}
+
+.logo img {
+    width: 100%;
+    vertical-align: middle;
+    /* color: white; */
+}
+
+.header_title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.navigation_components {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    gap: 35px;
+    margin-right: 35px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*------------------------------------------------
+    Top Players style 
+-------------------------------------------------*/
 body {
+    margin: 0;
     background: #F3F1FF;
     font-family: Poppins;
 }
@@ -21,9 +109,8 @@ main {
     padding: 30px;
     margin-bottom: 20px;
 }
-/*------------------------------------------------
-    Top Players style 
--------------------------------------------------*/
+
+
 .section_title {
     color: #562EFF;
     font-size: 24px;
@@ -52,7 +139,8 @@ main {
     font-size: 18px;
     font-weight: 500;
 }
-hr{
+
+hr {
     background: #D1D1D1;
     margin-bottom: 20px;
 }
@@ -60,7 +148,7 @@ hr{
 /*---------------------------------------------------------
     Top Blog style 
 ----------------------------------------------------------*/
-.blogs{
+.blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* grid-row-gap: 20px; */
@@ -68,23 +156,28 @@ hr{
     column-gap: 50px;
     margin-top: 20px;
 }
-.thumbnail{
+
+.thumbnail {
     width: 225px;
 }
-.thumbnail img{
+
+.thumbnail img {
     width: 100%;
 }
-article{
+
+article {
     display: flex;
     align-items: flex-start;
     gap: 20px;
 }
-.blog_author{
+
+.blog_author {
     color: #9F9F9F;
     font-size: 16px;
     font-weight: 400;
 }
-.blog_author a{
+
+.blog_author a {
     color: #562EFF;
     text-decoration: none;
 }
@@ -92,48 +185,61 @@ article{
 /*------------------------------------------------
         Latest Courses Section Style 
 -------------------------------------------------*/
-.courses{
+.courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 10px;
 }
-.course_img_container{
+
+.course_img_container {
     width: 266px;
 }
-.course_img_container img{
+
+.course_img_container img {
     width: 100%;
 }
-.course_title{
+
+.course_title {
     font-size: 20px;
     font-weight: 500;
     margin: 0 auto;
 }
-.course_instructor{
+
+.course_instructor {
     color: #ED6B4F;
     font-size: 14px;
     font-weight: 400;
     margin: 0 auto;
 }
-.filled_star{
+
+.filled_star {
     color: #FFC014;
 }
-.empty_star{
+
+.empty_star {
     color: #AEAEAE;
 }
-.rating_and_duration{
+
+.rating_and_duration {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
 }
-.duration{
+
+.duration {
     background-color: #FFE4E8;
+    color: #FF4A60;
     padding: 2px 10px;
     border-radius: 30px;
 }
-.rating_point{
+
+.rating_point {
     color: #A2A2A2;
     font-weight: 400;
 }
 
+.hide {
+    display: none;
+}
